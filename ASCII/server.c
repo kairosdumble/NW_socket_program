@@ -5,6 +5,7 @@
 #include <arpa/inet.h>
 #include <sys/socket.h>
 #define BUFFER_SIZE 5
+
 int main() {
     int ss, sa;
     char input[BUFFER_SIZE + 1];  // +1 for null-termination

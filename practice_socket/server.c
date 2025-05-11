@@ -3,7 +3,7 @@
 #include <sys/socket.h> //소켓과 인터넷에 관련된 라이브러리
 #include <arpa/inet.h> //아파넷 관련 함수
 
-void main(){
+int main(){
   int ss,sa;
   struct sockaddr_in ssa;
 
@@ -27,5 +27,6 @@ void main(){
     send(sa,"test",5,0);
     close(sa);
   }
+  return 0;
 }
 
